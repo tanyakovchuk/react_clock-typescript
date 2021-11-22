@@ -1,0 +1,39 @@
+.app {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid blue;
+  padding: 20px;
+
+  &__title {
+    text-transform: uppercase;
+  }
+
+  &__clock {
+    margin-bottom: 20px;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  &__button {
+    background-color: aliceblue;
+    border-radius: 3px;
+    color: blue;
+    border: 1px solid blue;
+    padding: 10px 15px;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+
+    &:hover {
+      background-color: blue;
+      color: white;
+    }
+  }
+
+}
+
